@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: a282cbdd77fe44f44896af1ba09649eb
+timeCreated: 1500484927
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Kold run_1
+    21300002: Kold run_2
+    21300004: Kold run_3
+    21300006: Kold run_4
+    21300008: Kold run_5
+    21300010: Kold run_6
+    21300012: Kold run_7
+    21300014: Kold run_8
+    21300016: Kold run_10
+    21300018: Kold run_11
+    21300020: Kold run_12
+    21300022: Kold run_13
+    21300024: Kold run_15
+    21300026: Kold run_16
+    21300028: Kold run_17
+    21300030: Kold run_18
+    21300032: Kold run_21
+    21300034: Kold run_0
+    21300036: Kold run_9
+    21300038: Kold run_14
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kold run_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 49
+        width: 98
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 49
+        width: 98
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_3
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 49
+        width: 104
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_4
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 78
+        width: 116
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_5
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 49
+        width: 91
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_6
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 49
+        width: 91
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_7
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 49
+        width: 123
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_8
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 84
+        width: 128
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_10
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 49
+        width: 98
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_11
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 49
+        width: 98
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_12
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 49
+        width: 104
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_13
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 78
+        width: 116
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_15
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 49
+        width: 91
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_16
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 49
+        width: 84
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_17
+      rect:
+        serializedVersion: 2
+        x: 2561
+        y: 49
+        width: 123
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Kold run_18
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 84
+        width: 128
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
