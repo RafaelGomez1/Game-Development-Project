@@ -11,14 +11,16 @@ public class PlayerControl : MonoBehaviour
 
     //Initial position of player
     private Vector3 startPosition;
-
-
     private Rigidbody2D rigidBody;
     public float jumpForce = 6.0f;
     public Animator animator;
     public float runningSpeed = 6.0f;
     public LayerMask groundLayerMask;
     private bool facingRight = true;
+
+    public AudioSource jumping;
+    public AudioSource walking;
+
 
     void Awake()
     {
@@ -30,7 +32,7 @@ public class PlayerControl : MonoBehaviour
 
         animator.SetBool("IsMove", false);
 		animator.SetBool ("IsJump", false);
-        
+       
 
     }
 
@@ -39,6 +41,7 @@ public class PlayerControl : MonoBehaviour
     {
         this.transform.position = startPosition;
         rigidBody.velocity = new Vector2(0,0);
+
     }
 
     // Update is called once per frame
@@ -55,40 +58,42 @@ public class PlayerControl : MonoBehaviour
             Move();
             Flip(horizontal);
         }
-		
-        
 
     }
 
     void Jump()
     {
 
-		if (Input.GetKeyDown (KeyCode.W)) {
-			rigidBody.AddForce (Vector2.up * jumpForce, ForceMode2D.Impulse);
-		}
-
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumping.Play();
+        }
     }
 
     void Move()
     {
-        
-        if (Input.GetKey (KeyCode.D)) {
+
+        if (Input.GetKey(KeyCode.D))
+        {
 
 
-            rigidBody.velocity = new Vector2 (runningSpeed, rigidBody.velocity.y);
-			animator.SetBool("IsMove", true);
+            rigidBody.velocity = new Vector2(runningSpeed, rigidBody.velocity.y);
+            animator.SetBool("IsMove", true);
+            GetComponent<AudioSource>
 
-		} else if (Input.GetKey (KeyCode.A)) {
-            
-            
-            rigidBody.velocity = new Vector2 (-runningSpeed, rigidBody.velocity.y);
-			animator.SetBool("IsMove", true);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            rigidBody.velocity = new Vector2(-runningSpeed, rigidBody.velocity.y);
+            animator.SetBool("IsMove", true);
 
-		} else {
-			animator.SetBool("IsMove", false);
-		}
-        
 
+        }
+        else
+        {
+            animator.SetBool("IsMove", false);
+        }
 
     }
 

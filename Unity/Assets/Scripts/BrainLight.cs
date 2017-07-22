@@ -29,13 +29,13 @@ public class BrainLight : MonoBehaviour {
     {
         time += Time.deltaTime;
         
-        if (time < 2)
+        if (time < 3)
         {
             Light.intensity += 0.1f;
             Light.range += 0.01f;
            
         }
-        else if (time > 2 && time < 4)
+        else if (time > 3 && time < 6)
         {
             Light.intensity -= 0.1f;
             Light.range -= 0.01f;
