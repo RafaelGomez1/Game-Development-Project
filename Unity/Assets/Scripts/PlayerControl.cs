@@ -19,8 +19,6 @@ public class PlayerControl : MonoBehaviour
     private bool facingRight = true;
 
     public AudioSource jumping;
-    public AudioSource walking;
-
 
     void Awake()
     {
@@ -75,13 +73,9 @@ public class PlayerControl : MonoBehaviour
     {
 
         if (Input.GetKey(KeyCode.D))
-        {
-
-
+        { 
             rigidBody.velocity = new Vector2(runningSpeed, rigidBody.velocity.y);
             animator.SetBool("IsMove", true);
-            GetComponent<AudioSource>
-
         }
         else if (Input.GetKey(KeyCode.A))
         {

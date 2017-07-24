@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour {
     //Patron de configuracion Singleton, permite una nuica instanciacion para ser usada multiples veces por distintos Gameobjectes.
     public static GameManager sharedInstance;
 
+    public Canvas inGame;
+
     //Antes de cargar la escena, necesitamos que la variable sharedInstance, significa la misma clase.
     private void Awake()
     {
@@ -67,15 +69,15 @@ public class GameManager : MonoBehaviour {
     {
         if (newGameState == GameState.menu)
         {
-            //Muestra el menu principal
+            inGame.enabled = false;
         }
         else if (newGameState == GameState.inTheGame)
         {
-            //La escena se configura para jugar.
+            inGame.enabled = true;
         }
         else if (newGameState == GameState.gameOver)
         {
-            //Pantalla de fin de juego
+            inGame.enabled = false;
         }
 
         currentGameState = newGameState;
