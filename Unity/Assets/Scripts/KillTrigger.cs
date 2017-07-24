@@ -14,6 +14,10 @@ public class KillTrigger : MonoBehaviour {
         if (theObject.tag == "Player")
         {
             PlayerControl.sharedInstance.KillPlayer();
+
+            //Metodo de GameManager para quitar corazones.
+            GameManager.sharedInstance.RestLife();
+            
         }
     }
 
