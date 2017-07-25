@@ -9,12 +9,8 @@ public class LifeAnimation : MonoBehaviour {
     // Use this for initialization
     void Start () {
         animator.SetBool("IsLifeHud", true);
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        animator.SetBool("IsLifeHud", true);
 
     }
+
 
 }
