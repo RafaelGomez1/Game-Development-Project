@@ -14,5 +14,7 @@ public class LifeAnimation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         animator.SetBool("IsLifeHud", true);
+
     }
+
 }

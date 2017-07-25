@@ -23,8 +23,9 @@ public class GameManager : MonoBehaviour {
 
     //Prueba corazones
     public bool lostheal;
-    public int x = 0;
+    public int life = 0;
     public Image heart1, heart2, heart3;
+    public Image halfHeart1, halfHeart2, halfHeart3;
 
 
 
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour {
         heart1.enabled = true;
         heart2.enabled = true;
         heart3.enabled = true;
+
         PlayerControl.sharedInstance.StartGame();
         ChangeGameState(GameState.inTheGame);
     }
@@ -80,22 +82,25 @@ public class GameManager : MonoBehaviour {
     public void RestLife()
     {
         //Quitar corazones.
-        if (x == 1)
+        if (life == 1)
         {
             heart1.enabled = false;
-
+          
         }
-        else if (x == 2)
+        else if (life == 2)
         {
             heart2.enabled = false;
+           
         }
-        else if (x == 3)
+        else if (life == 3)
         {
             heart3.enabled = false;
-            x = 0;
+
+            life = 0;
+            //TODO change state to Game Over
             StartGame();
         }
-        x += 1;
+        life += 1;
 
 
     }
