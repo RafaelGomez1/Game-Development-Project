@@ -23,9 +23,10 @@ public class GameManager : MonoBehaviour {
 
     //Prueba corazones
     public bool lostheal;
-    public int life = 0;
+    public int x = 0;
     public Image heart1, heart2, heart3;
-    public Image halfHeart1, halfHeart2, halfHeart3;
+    public bool koldRoom, livingRoom, hallWay, danasRoom, kitchen;
+
 
 
 
@@ -35,6 +36,12 @@ public class GameManager : MonoBehaviour {
     {
        
         sharedInstance = this;
+        koldRoom = true;
+        livingRoom = false;
+        hallWay = false;
+        danasRoom = false;
+        kitchen = false;
+
     }
 
    
@@ -62,7 +69,6 @@ public class GameManager : MonoBehaviour {
         heart1.enabled = true;
         heart2.enabled = true;
         heart3.enabled = true;
-
         PlayerControl.sharedInstance.StartGame();
         ChangeGameState(GameState.inTheGame);
     }
@@ -82,25 +88,22 @@ public class GameManager : MonoBehaviour {
     public void RestLife()
     {
         //Quitar corazones.
-        if (life == 1)
+        if (x == 1)
         {
             heart1.enabled = false;
-          
+
         }
-        else if (life == 2)
+        else if (x == 2)
         {
             heart2.enabled = false;
-           
         }
-        else if (life == 3)
+        else if (x == 3)
         {
             heart3.enabled = false;
-
-            life = 0;
-            //TODO change state to Game Over
+            x = 0;
             StartGame();
         }
-        life += 1;
+        x += 1;
 
 
     }
@@ -123,7 +126,21 @@ public class GameManager : MonoBehaviour {
         currentGameState = newGameState;
     }
 
-
+    public void ChangeRoom(string room)
+    {
+        if (room == "Hallway")
+        {
+            hallWay = true;
+        }
+        else if (room == "LivingRoom")
+        {
+            livingRoom = true;
+        }
+        else if (room == "kitchenRoom")
+        {
+            kitchen = true;
+        }
+    }
 
 
 

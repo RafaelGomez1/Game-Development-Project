@@ -114,6 +114,7 @@ public class PlayerControl : MonoBehaviour
 
     public void KillPlayer()
     {
+        Debug.Log("Muerto");
         //GameManager.sharedInstance.GameOver();
         StartGame();
         
