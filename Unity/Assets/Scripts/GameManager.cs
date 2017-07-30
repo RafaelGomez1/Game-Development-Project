@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour {
     //Patron de configuracion Singleton, permite una nuica instanciacion para ser usada multiples veces por distintos Gameobjectes.
     public static GameManager sharedInstance;
 
+	public GameObject menu;
     public Canvas inGame;
 
     //Prueba corazones
@@ -41,7 +42,8 @@ public class GameManager : MonoBehaviour {
     void Start()
     {
         currentGameState = GameState.menu;
-        StartGame();
+		menu.SetActive (true);
+        //StartGame();
     }
 
     void Update()
@@ -58,7 +60,8 @@ public class GameManager : MonoBehaviour {
 
     public void StartGame()
     {
-        heart1.enabled = true;
+		menu.SetActive (false);
+		heart1.enabled = true;
         heart2.enabled = true;
         heart3.enabled = true;
         PlayerControl.sharedInstance.StartGame();
@@ -69,12 +72,14 @@ public class GameManager : MonoBehaviour {
     public void GameOver()
     {
         ChangeGameState(GameState.gameOver);
+		menu.SetActive (true);
     }
 
    
     public void BackToMainMenu()
     {
         ChangeGameState(GameState.menu);
+		menu.SetActive (true);
     }
 
     public void RestLife()
