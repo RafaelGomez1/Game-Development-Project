@@ -34,24 +34,7 @@ public class GameManager : MonoBehaviour {
     //Antes de cargar la escena, necesitamos que la variable sharedInstance, significa la misma clase.
     private void Awake()
     {
-       
         sharedInstance = this;
-        
-        livingRoom = false;
-        hallWay = false;
-        danasRoom = false;
-        kitchen = false;
-
-        //Praise the Bob
-        if (GameObject.Find("Bob"))
-        {
-            koldRoom = true;
-        }
-        else
-        {
-            koldRoom = false;
-        }
-
     }
 
    
@@ -135,27 +118,10 @@ public class GameManager : MonoBehaviour {
         currentGameState = newGameState;
     }
 
-    public void ChangeRoom(string room)
-    {
-
-
-        if (room == "Hallway")
-        {
-            hallWay = true;
-        }
-        else if (room == "LivingRoom")
-        {
-            livingRoom = true;
-        }
-        else if (room == "kitchenRoom")
-        {
-            kitchen = true;
-        }
-    }
 
     public bool RestrictMovement()
     {
-        if (koldRoom || danasRoom || livingRoom || kitchen || hallWay)
+        if (GameObject.Find("Bob"))
             return true;
         else
             return false;

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Subconscious.unity
+- path: Assets/Scenes/Casa.unity
   isLoaded: 1
   isActive: 1

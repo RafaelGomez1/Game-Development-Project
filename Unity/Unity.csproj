@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BrainLight.cs" />
     <Compile Include="Assets\Scripts\Camera\Camera2DFollow.cs" />
+    <Compile Include="Assets\Scripts\Camera\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Camera\TestFollowingCamera.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
@@ -94,6 +95,8 @@
     <Compile Include="Assets\Scripts\Triggers\TriggerDoor.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Audio_menu.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\LifeAnimation.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\ShowText.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\TextDoor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

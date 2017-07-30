@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: 4d68f74118105e64e8a675ebb889d808
-timeCreated: 1501376332
+guid: 6d7ded926c082cf42927144e616015b3
+timeCreated: 1501434517
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Kold-walk_0
-    21300002: Kold-walk_1
-    21300004: Kold-walk_2
-    21300006: Kold-walk_3
-    21300008: Kold-walk_4
-    21300010: Kold-walk_5
-    21300012: Kold-walk_6
-    21300014: Kold-walk_7
-    21300016: Kold-walk_8
-    21300018: Kold-walk_9
-    21300020: Kold-walk_10
-    21300022: Kold-walk_11
+    21300000: Kold-Sheet sprite 1_0
+    21300002: Kold-Sheet sprite 1_1
+    21300004: Kold-Sheet sprite 1_2
+    21300006: Kold-Sheet sprite 1_3
+    21300008: Kold-Sheet sprite 1_4
+    21300010: Kold-Sheet sprite 1_5
+    21300012: Kold-Sheet sprite 1_6
+    21300014: Kold-Sheet sprite 1_7
+    21300016: Kold-Sheet sprite 1_8
+    21300018: Kold-Sheet sprite 1_9
+    21300020: Kold-Sheet sprite 1_10
+    21300022: Kold-Sheet sprite 1_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -82,156 +82,156 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kold-walk_0
+      name: Kold-Sheet sprite 1_0
       rect:
         serializedVersion: 2
-        x: 608
-        y: 8
-        width: 15
-        height: 39
+        x: 3634
+        y: 48
+        width: 120
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_1
+      name: Kold-Sheet sprite 1_1
       rect:
         serializedVersion: 2
-        x: 638
-        y: 8
-        width: 15
-        height: 38
+        x: 3811
+        y: 48
+        width: 137
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_2
+      name: Kold-Sheet sprite 1_2
       rect:
         serializedVersion: 2
-        x: 668
-        y: 8
-        width: 15
-        height: 39
+        x: 3990
+        y: 48
+        width: 137
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_3
+      name: Kold-Sheet sprite 1_3
       rect:
         serializedVersion: 2
-        x: 698
-        y: 8
-        width: 15
-        height: 40
+        x: 4172
+        y: 48
+        width: 134
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_4
+      name: Kold-Sheet sprite 1_4
       rect:
         serializedVersion: 2
-        x: 728
-        y: 8
-        width: 15
-        height: 39
+        x: 4350
+        y: 48
+        width: 140
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_5
+      name: Kold-Sheet sprite 1_5
       rect:
         serializedVersion: 2
-        x: 758
-        y: 8
-        width: 15
-        height: 39
+        x: 4532
+        y: 47
+        width: 119
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_6
+      name: Kold-Sheet sprite 1_6
       rect:
         serializedVersion: 2
-        x: 788
-        y: 8
-        width: 15
-        height: 39
+        x: 4711
+        y: 47
+        width: 134
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_7
+      name: Kold-Sheet sprite 1_7
       rect:
         serializedVersion: 2
-        x: 818
-        y: 8
-        width: 15
-        height: 38
+        x: 4877
+        y: 47
+        width: 165
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_8
+      name: Kold-Sheet sprite 1_8
       rect:
         serializedVersion: 2
-        x: 848
-        y: 8
-        width: 15
-        height: 39
+        x: 5059
+        y: 47
+        width: 155
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_9
+      name: Kold-Sheet sprite 1_9
       rect:
         serializedVersion: 2
-        x: 878
-        y: 8
-        width: 15
-        height: 40
+        x: 5245
+        y: 48
+        width: 142
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_10
+      name: Kold-Sheet sprite 1_10
       rect:
         serializedVersion: 2
-        x: 908
-        y: 8
-        width: 15
-        height: 39
+        x: 5418
+        y: 48
+        width: 151
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-walk_11
+      name: Kold-Sheet sprite 1_11
       rect:
         serializedVersion: 2
-        x: 938
-        y: 8
-        width: 15
-        height: 39
+        x: 5623
+        y: 44
+        width: 99
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

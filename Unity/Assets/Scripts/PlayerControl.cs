@@ -79,7 +79,7 @@ public class PlayerControl : MonoBehaviour
         if (GameManager.sharedInstance.RestrictMovement())
         {
             animator.SetBool("isRestricted", true);
-            runningSpeed = 3.0f;
+            runningSpeed = 4.0f;
            
         }
        
