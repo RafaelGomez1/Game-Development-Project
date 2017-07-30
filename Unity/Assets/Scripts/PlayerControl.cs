@@ -64,8 +64,11 @@ public class PlayerControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            jumping.Play();
+            if (!GameManager.sharedInstance.RestrictMovement())
+            {
+                rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                jumping.Play();
+            }
         }
     }
 

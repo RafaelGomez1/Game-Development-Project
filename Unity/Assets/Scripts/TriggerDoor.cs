@@ -7,8 +7,6 @@ public class TriggerDoor : MonoBehaviour {
     public string room;
 	void OnTriggerEnter2D(Collider2D theObject)
 	{
-        
-		Debug.Log ("Door");
 
 		if (theObject.tag == "Player")
 		{

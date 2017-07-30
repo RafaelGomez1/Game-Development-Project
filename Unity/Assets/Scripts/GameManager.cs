@@ -142,6 +142,13 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public bool RestrictMovement()
+    {
+        if (koldRoom || danasRoom || livingRoom || kitchen || hallWay)
+            return true;
+        else
+            return false;
+    }
 
 
 }
