@@ -30,6 +30,7 @@ public class PlayerControl : MonoBehaviour
 
         animator.SetBool("IsMove", false);
 		animator.SetBool ("IsJump", false);
+        animator.SetBool("isRestricted", false);
        
 
     }
@@ -74,6 +75,15 @@ public class PlayerControl : MonoBehaviour
 
     void Move()
     {
+        
+        if (GameManager.sharedInstance.RestrictMovement())
+        {
+            animator.SetBool("isRestricted", true);
+            runningSpeed = 3.0f;
+           
+        }
+       
+
 
         if (Input.GetKey(KeyCode.D))
         { 
@@ -117,7 +127,6 @@ public class PlayerControl : MonoBehaviour
 
     public void KillPlayer()
     {
-        Debug.Log("Muerto");
         //GameManager.sharedInstance.GameOver();
         StartGame();
         

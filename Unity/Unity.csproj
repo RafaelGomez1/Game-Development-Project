@@ -88,9 +88,10 @@
     <Compile Include="Assets\Scripts\Camera\Camera2DFollow.cs" />
     <Compile Include="Assets\Scripts\Camera\TestFollowingCamera.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\KillTrigger.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\TriggerDoor.cs" />
+    <Compile Include="Assets\Scripts\Triggers\DoorNextLevelTrigger.cs" />
+    <Compile Include="Assets\Scripts\Triggers\KillTrigger.cs" />
+    <Compile Include="Assets\Scripts\Triggers\TriggerDoor.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Audio_menu.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\LifeAnimation.cs" />
   </ItemGroup>

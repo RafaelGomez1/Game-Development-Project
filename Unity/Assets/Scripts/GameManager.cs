@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour {
     public Canvas inGame;
 
     //Prueba corazones
-    public bool lostheal;
+    //public bool lostheal;
     public int x = 0;
     public Image heart1, heart2, heart3;
     public bool koldRoom, livingRoom, hallWay, danasRoom, kitchen;
@@ -36,11 +36,21 @@ public class GameManager : MonoBehaviour {
     {
        
         sharedInstance = this;
-        koldRoom = true;
+        
         livingRoom = false;
         hallWay = false;
         danasRoom = false;
         kitchen = false;
+
+        //Praise the Bob
+        if (GameObject.Find("Bob"))
+        {
+            koldRoom = true;
+        }
+        else
+        {
+            koldRoom = false;
+        }
 
     }
 
@@ -52,16 +62,15 @@ public class GameManager : MonoBehaviour {
     }
 
     void Update()
-    {   
-        /*
-        if (Input.GetButtonDown("r"))
+    {
+        //Praise the Bob
+        if (GameObject.Find("Bob"))
         {
-            if (currentGameState != GameState.inTheGame)
-            {
-                StartGame();
-            }
+            heart1.enabled = false;
+            heart2.enabled = false;
+            heart3.enabled = false;
         }
-        */
+
     }
 
     public void StartGame()
@@ -128,6 +137,8 @@ public class GameManager : MonoBehaviour {
 
     public void ChangeRoom(string room)
     {
+
+
         if (room == "Hallway")
         {
             hallWay = true;
