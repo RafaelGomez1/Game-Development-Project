@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: cd0e8c1de1a65b64392dfc8000580d30
-timeCreated: 1500603172
+guid: dcdf5c7da4d2fdf49a36590ed71d8154
+timeCreated: 1501459427
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: exit neon_0
-    21300002: exit neon_1
-    21300004: exit neon_2
-    21300006: exit neon_3
-    21300008: exit neon_4
-    21300010: exit neon_5
+    21300000: Kold-Sheet sprite_0
+    21300002: Kold-Sheet sprite_1
+    21300004: Kold-Sheet sprite_2
+    21300006: Kold-Sheet sprite_3
+    21300008: Kold-Sheet sprite_4
+    21300010: Kold-Sheet sprite_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -76,78 +76,78 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: exit neon_0
+      name: Kold-Sheet sprite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 46
-        height: 20
+        x: 4680
+        y: 62
+        width: 242
+        height: 303
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: exit neon_1
+      name: Kold-Sheet sprite_1
       rect:
         serializedVersion: 2
-        x: 52
-        y: 0
-        width: 40
-        height: 20
+        x: 4948
+        y: 64
+        width: 181
+        height: 308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: exit neon_2
+      name: Kold-Sheet sprite_2
       rect:
         serializedVersion: 2
-        x: 103
-        y: 0
-        width: 38
-        height: 20
+        x: 5153
+        y: 64
+        width: 239
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: exit neon_3
+      name: Kold-Sheet sprite_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 0
-        width: 48
-        height: 20
+        x: 5403
+        y: 64
+        width: 198
+        height: 318
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: exit neon_4
+      name: Kold-Sheet sprite_4
       rect:
         serializedVersion: 2
-        x: 199
-        y: 0
-        width: 47
-        height: 20
+        x: 5632
+        y: 62
+        width: 216
+        height: 328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: exit neon_5
+      name: Kold-Sheet sprite_5
       rect:
         serializedVersion: 2
-        x: 248
-        y: 0
-        width: 46
-        height: 20
+        x: 5856
+        y: 58
+        width: 236
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

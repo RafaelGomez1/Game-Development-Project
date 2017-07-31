@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 //Parecido una clase pero solo puede tomar esos 3 valores.
@@ -24,14 +25,9 @@ public class GameManager : MonoBehaviour {
 
     //Prueba corazones
     //public bool lostheal;
-    public int x = 0;
+    private int x = 0;
     public Image heart1, heart2, heart3;
-    public bool koldRoom, livingRoom, hallWay, danasRoom, kitchen;
-
-
-
-
-
+    
     //Antes de cargar la escena, necesitamos que la variable sharedInstance, significa la misma clase.
     private void Awake()
     {
@@ -55,15 +51,19 @@ public class GameManager : MonoBehaviour {
             heart2.enabled = false;
             heart3.enabled = false;
         }
-
+        else
+        {
+            heart1.enabled = true;
+            heart2.enabled = true;
+            heart3.enabled = true;
+        }
     }
+
+
 
     public void StartGame()
     {
-		menu.SetActive (false);
-		heart1.enabled = true;
-        heart2.enabled = true;
-        heart3.enabled = true;
+        menu.SetActive(false);
         PlayerControl.sharedInstance.StartGame();
         ChangeGameState(GameState.inTheGame);
     }
