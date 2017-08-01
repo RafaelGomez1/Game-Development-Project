@@ -2,35 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 //Parecido una clase pero solo puede tomar esos 3 valores.
 public enum GameState
 {
-    menu,
+    pause,
     inTheGame,
-    gameOver
+    gameOver,
 }
 
 public class GameManager : MonoBehaviour {
 
-    public GameState currentGameState = GameState.menu;
+    public GameState currentGameState = GameState.inTheGame;
 
-    //Patron de configuracion Singleton, permite una nuica instanciacion para ser usada multiples veces por distintos Gameobjectes.
+    //Patron de configuracion Singleton, permite una unica instanciacion para ser usada multiples veces por distintos Gameobjectes.
     public static GameManager sharedInstance;
 
-	public GameObject menu;
     public Canvas inGame;
 
     //Prueba corazones
     //public bool lostheal;
-    public int x = 0;
+    private int x = 0;
     public Image heart1, heart2, heart3;
-    public bool koldRoom, livingRoom, hallWay, danasRoom, kitchen;
-
-
-
-
+    private int scene;
+   
 
     //Antes de cargar la escena, necesitamos que la variable sharedInstance, significa la misma clase.
     private void Awake()
@@ -41,45 +38,33 @@ public class GameManager : MonoBehaviour {
    
     void Start()
     {
-        currentGameState = GameState.menu;
-		menu.SetActive (true);
-        //StartGame();
-    }
 
-    void Update()
-    {
-        //Praise the Bob
-        if (GameObject.Find("Bob"))
+        StartGame();
+
+        scene = SceneManager.GetActiveScene().buildIndex;
+        if (scene == 2 || scene == 3)
         {
             heart1.enabled = false;
             heart2.enabled = false;
             heart3.enabled = false;
         }
+    }
 
+    void Update()
+    {
+        
     }
 
     public void StartGame()
     {
-		menu.SetActive (false);
-		heart1.enabled = true;
-        heart2.enabled = true;
-        heart3.enabled = true;
+        currentGameState = GameState.inTheGame;
         PlayerControl.sharedInstance.StartGame();
-        ChangeGameState(GameState.inTheGame);
     }
 
    
     public void GameOver()
     {
         ChangeGameState(GameState.gameOver);
-		menu.SetActive (true);
-    }
-
-   
-    public void BackToMainMenu()
-    {
-        ChangeGameState(GameState.menu);
-		menu.SetActive (true);
     }
 
     public void RestLife()
@@ -107,13 +92,20 @@ public class GameManager : MonoBehaviour {
 
     private void ChangeGameState(GameState newGameState)
     {
-        if (newGameState == GameState.menu)
+        if (newGameState == GameState.pause)
         {
             inGame.enabled = false;
+            heart1.enabled = true;
+            heart2.enabled = true;
+            heart3.enabled = true;
+
         }
         else if (newGameState == GameState.inTheGame)
         {
             inGame.enabled = true;
+            heart1.enabled = true;
+            heart2.enabled = true;
+            heart3.enabled = true;
         }
         else if (newGameState == GameState.gameOver)
         {
@@ -126,7 +118,8 @@ public class GameManager : MonoBehaviour {
 
     public bool RestrictMovement()
     {
-        if (GameObject.Find("Bob"))
+        scene = SceneManager.GetActiveScene().buildIndex;
+        if  (scene == 2 || scene == 3)
             return true;
         else
             return false;

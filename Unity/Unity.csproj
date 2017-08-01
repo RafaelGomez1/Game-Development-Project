@@ -90,11 +90,12 @@
     <Compile Include="Assets\Scripts\Camera\TestFollowingCamera.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\Triggers\DoorNextLevelTrigger.cs" />
     <Compile Include="Assets\Scripts\Triggers\KillTrigger.cs" />
+    <Compile Include="Assets\Scripts\Triggers\NextLevelTrigger.cs" />
     <Compile Include="Assets\Scripts\Triggers\TriggerDoor.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Audio_menu.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\ChangeToScene.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\LifeAnimation.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ShowText.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\TextDoor.cs" />
   </ItemGroup>
