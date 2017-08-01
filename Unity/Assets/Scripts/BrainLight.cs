@@ -27,25 +27,29 @@ public class BrainLight : MonoBehaviour {
 
     public void ChangeTime()
     {
-        time += Time.deltaTime;
-        
-        if (time < 3)
+        if (GameManager.sharedInstance.currentGameState != GameState.pause)
         {
-            Light.intensity += 0.1f;
-            Light.range += 0.01f;
-           
-        }
-        else if (time > 3 && time < 6)
-        {
-            Light.intensity -= 0.1f;
-            Light.range -= 0.01f;
+            time += Time.deltaTime;
 
+            if (time < 3)
+            {
+                Light.intensity += 0.1f;
+                Light.range += 0.01f;
+
+            }
+            else if (time > 3 && time < 6)
+            {
+                Light.intensity -= 0.1f;
+                Light.range -= 0.01f;
+
+            }
+            else
+            {
+                Light.intensity = intensity;
+                time = 0.0f;
+            }
         }
-        else
-        {
-            Light.intensity = intensity;
-            time = 0.0f;
-        }
+        
 
     }
 }

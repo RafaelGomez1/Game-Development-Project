@@ -69,10 +69,11 @@ public class GameManager : MonoBehaviour {
 
     public void RestLife()
     {
+        x += 1;
         //Quitar corazones.
         if (x == 1)
         {
-            heart1.enabled = false;
+            heart3.enabled = false;
 
         }
         else if (x == 2)
@@ -81,13 +82,14 @@ public class GameManager : MonoBehaviour {
         }
         else if (x == 3)
         {
-            heart3.enabled = false;
+            heart1.enabled = false;
             x = 0;
             StartGame();
+            heart1.enabled = true;
+            heart2.enabled = true;
+            heart3.enabled = true;
         }
-        x += 1;
-
-
+       
     }
 
     private void ChangeGameState(GameState newGameState)

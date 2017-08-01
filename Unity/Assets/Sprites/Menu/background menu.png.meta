@@ -1,15 +1,13 @@
 fileFormatVersion: 2
-guid: 1cd89f2bbdd493347afb738ee9ba842b
-timeCreated: 1501578955
+guid: 1e593495178c9a44ea6c326192c471bd
+timeCreated: 1501585640
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Kold-Sheet sprite_0
-    21300002: Kold-Sheet sprite_1
-    21300004: Kold-Sheet sprite_2
-    21300006: Kold-Sheet sprite_3
-    21300008: Kold-Sheet sprite_4
-    21300010: Kold-Sheet sprite_5
+    21300000: background menu_0
+    21300002: background menu_1
+    21300004: background menu_2
+    21300006: background menu_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -76,80 +74,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kold-Sheet sprite_0
+      name: background menu_0
       rect:
         serializedVersion: 2
-        x: 3609
-        y: 47
-        width: 170
-        height: 244
+        x: 193
+        y: 109
+        width: 1616
+        height: 1052
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-Sheet sprite_1
+      name: background menu_1
       rect:
         serializedVersion: 2
-        x: 3791
-        y: 48
-        width: 160
-        height: 240
+        x: 2060
+        y: 118
+        width: 1667
+        height: 1024
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-Sheet sprite_2
+      name: background menu_2
       rect:
         serializedVersion: 2
-        x: 3958
-        y: 48
-        width: 174
-        height: 252
+        x: 4002
+        y: 90
+        width: 1909
+        height: 1076
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Kold-Sheet sprite_3
+      name: background menu_3
       rect:
         serializedVersion: 2
-        x: 4153
-        y: 49
-        width: 171
-        height: 247
+        x: 5995
+        y: 76
+        width: 1746
+        height: 1094
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Kold-Sheet sprite_4
-      rect:
-        serializedVersion: 2
-        x: 4346
-        y: 47
-        width: 142
-        height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Kold-Sheet sprite_5
-      rect:
-        serializedVersion: 2
-        x: 4534
-        y: 49
-        width: 124
-        height: 246
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

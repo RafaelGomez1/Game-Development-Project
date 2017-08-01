@@ -6,7 +6,7 @@ public class ShowText : MonoBehaviour {
 
     public GameObject moveText, jumpText;
     private bool Akey, Dkey, Wkey;
-    
+
 
 	// Use this for initialization
 	void Start ()
@@ -15,23 +15,30 @@ public class ShowText : MonoBehaviour {
         jumpText.SetActive(false);
         Akey = false;
         Dkey = false;
+        Wkey = false;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+
         if (Input.GetKeyDown(KeyCode.A))
             Akey = true;
         if (Input.GetKeyDown(KeyCode.D))
             Dkey = true;
-        if (Akey && Dkey)
+        if (Akey || Dkey)
         {
             moveText.SetActive(false);
-            jumpText.SetActive(true);
+            if (!Wkey)
+                jumpText.SetActive(true);
 
         }
 
         if (Input.GetKeyDown(KeyCode.W))
+        {
             jumpText.SetActive(false);
+            Wkey = true;
+        }
+            
     }
 }
