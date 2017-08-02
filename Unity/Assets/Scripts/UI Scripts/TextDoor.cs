@@ -5,7 +5,8 @@ using UnityEngine;
 public class TextDoor : MonoBehaviour {
 
     public GameObject text;
-
+    public GameObject target;
+    public Vector3 offset = new Vector3(0f,2f, 0f);
 
     // Use this for initialization
     void Start ()
@@ -20,7 +21,9 @@ public class TextDoor : MonoBehaviour {
 
         if (theObject.tag == "Player")
         {
+            text.transform.position = target.transform.position + offset;
             text.SetActive(true);
+
         }
     }
 

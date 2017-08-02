@@ -84,12 +84,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BrainLight.cs" />
     <Compile Include="Assets\Scripts\Camera\Camera2DFollow.cs" />
     <Compile Include="Assets\Scripts\Camera\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Camera\TestFollowingCamera.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Lighting\BrainLight.cs" />
+    <Compile Include="Assets\Scripts\Lighting\FlickeringLight.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Triggers\AnimationOnTrigger.cs" />
     <Compile Include="Assets\Scripts\Triggers\KillTrigger.cs" />
     <Compile Include="Assets\Scripts\Triggers\NextLevelTrigger.cs" />
     <Compile Include="Assets\Scripts\Triggers\TriggerDoor.cs" />
